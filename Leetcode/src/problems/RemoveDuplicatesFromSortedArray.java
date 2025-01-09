@@ -11,7 +11,7 @@ public class RemoveDuplicatesFromSortedArray {
     public int solve() {
         int dupeIndex = 0;
 
-        for(int i = 0; i < this.nums.length; i++) {
+        for(int i = 0; i < nums.length; i++) {
             if(i == 0 || nums[i] != nums[i - 1]) {
                 nums[dupeIndex++] = nums[i];
             }

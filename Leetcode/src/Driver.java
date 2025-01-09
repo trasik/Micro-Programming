@@ -2,6 +2,7 @@ package src;
 
 import problems.MergeSortedArray;
 import problems.RemoveDuplicatesFromSortedArray;
+import problems.RemoveDuplicatesFromSortedArray2;
 import problems.RemoveElement;
 
 import java.util.Arrays;
@@ -11,6 +12,8 @@ public class Driver {
     public static void main(String[] args) {
         testMergeSortedArray();
         testRemoveElement();
+        testRemoveDuplicatesFromSortedArray();
+        testRemoveDuplicatesFromSortedArray2();
     }
 
     public static void testMergeSortedArray() {
@@ -43,6 +46,16 @@ public class Driver {
         System.out.println("26. Remove Duplicates from Sorted Array\n");
         RemoveDuplicatesFromSortedArray rdfsa1 = new RemoveDuplicatesFromSortedArray(new int[] {1,1,2});
         RemoveDuplicatesFromSortedArray rdfsa2 = new RemoveDuplicatesFromSortedArray(new int[] {0,0,1,1,1,2,2,3,3,4});
+
+        System.out.println(rdfsa1.solve());
+        System.out.println(rdfsa2.solve());
+        System.out.println();
+    }
+
+    public static void testRemoveDuplicatesFromSortedArray2() {
+        System.out.println("80. Remove Duplicates from Sorted Array 2\n");
+        RemoveDuplicatesFromSortedArray2 rdfsa1 = new RemoveDuplicatesFromSortedArray2(new int[] {1,1,1,2,2,3});
+        RemoveDuplicatesFromSortedArray2 rdfsa2 = new RemoveDuplicatesFromSortedArray2(new int[] {0,0,1,1,1,1,2,3,3});
 
         System.out.println(rdfsa1.solve());
         System.out.println(rdfsa2.solve());
