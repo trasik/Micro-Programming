@@ -1,9 +1,6 @@
 package src;
 
-import problems.MergeSortedArray;
-import problems.RemoveDuplicatesFromSortedArray;
-import problems.RemoveDuplicatesFromSortedArray2;
-import problems.RemoveElement;
+import problems.*;
 
 import java.util.Arrays;
 
@@ -14,6 +11,7 @@ public class Driver {
         testRemoveElement();
         testRemoveDuplicatesFromSortedArray();
         testRemoveDuplicatesFromSortedArray2();
+        testMajorityElement();
     }
 
     public static void testMergeSortedArray() {
@@ -59,6 +57,16 @@ public class Driver {
 
         System.out.println(rdfsa1.solve());
         System.out.println(rdfsa2.solve());
+        System.out.println();
+    }
+
+    public static void testMajorityElement() {
+        System.out.println("169. Majority Element\n");
+        MajorityElement me1 = new MajorityElement(new int[] {3,2,3});
+        MajorityElement me2 = new MajorityElement(new int[] {2,2,1,1,1,2,2});
+
+        System.out.println(me1.solve());
+        System.out.println(me2.solve());
         System.out.println();
     }
 }
