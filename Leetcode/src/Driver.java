@@ -12,6 +12,7 @@ public class Driver {
         testRemoveDuplicatesFromSortedArray();
         testRemoveDuplicatesFromSortedArray2();
         testMajorityElement();
+        testRotateArray();
     }
 
     public static void testMergeSortedArray() {
@@ -68,5 +69,17 @@ public class Driver {
         System.out.println(me1.solve());
         System.out.println(me2.solve());
         System.out.println();
+    }
+
+    public static void testRotateArray() {
+        System.out.println("189. Rotate Array\n");
+        RotateArray ra1 = new RotateArray(new int[] {1,2,3,4,5,6,7}, 3);
+        RotateArray ra2 = new RotateArray(new int[] {-1,-100,3,99}, 2);
+
+        ra1.solve();
+        ra2.solve();
+
+        System.out.println(Arrays.toString(ra1.getNums()));
+        System.out.println(Arrays.toString(ra2.getNums()));
     }
 }
