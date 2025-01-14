@@ -14,6 +14,7 @@ public class Driver {
         testMajorityElement();
         testRotateArray();
         testBuyTimeToBuyAndSellStock();
+        testBuyTimeToBuyAndSellStock2();
     }
 
     public static void testMergeSortedArray() {
@@ -82,6 +83,7 @@ public class Driver {
 
         System.out.println(Arrays.toString(ra1.getNums()));
         System.out.println(Arrays.toString(ra2.getNums()));
+        System.out.println();
     }
 
     public static void testBuyTimeToBuyAndSellStock() {
@@ -91,5 +93,18 @@ public class Driver {
 
         System.out.println(btbss1.solve());
         System.out.println(btbss2.solve());
+        System.out.println();
+    }
+
+    public static void testBuyTimeToBuyAndSellStock2() {
+        System.out.println("122. Best Time to Buy and Sell Stock 2\n");
+        BestTimeToBuyAndSellStock2 btbss1 = new BestTimeToBuyAndSellStock2(new int[] {7,1,5,3,6,4});
+        BestTimeToBuyAndSellStock2 btbss2 = new BestTimeToBuyAndSellStock2(new int[] {1,2,3,4,5});
+        BestTimeToBuyAndSellStock2 btbss3 = new BestTimeToBuyAndSellStock2(new int[] {7,6,4,3,1});
+
+        System.out.println(btbss1.solve());
+        System.out.println(btbss2.solve());
+        System.out.println(btbss3.solve());
+        System.out.println();
     }
 }
