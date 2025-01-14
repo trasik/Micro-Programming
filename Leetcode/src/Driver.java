@@ -13,6 +13,7 @@ public class Driver {
         testRemoveDuplicatesFromSortedArray2();
         testMajorityElement();
         testRotateArray();
+        testBuyTimeToBuyAndSellStock();
     }
 
     public static void testMergeSortedArray() {
@@ -81,5 +82,14 @@ public class Driver {
 
         System.out.println(Arrays.toString(ra1.getNums()));
         System.out.println(Arrays.toString(ra2.getNums()));
+    }
+
+    public static void testBuyTimeToBuyAndSellStock() {
+        System.out.println("121. Best Time to Buy and Sell Stock\n");
+        BestTimeToBuyAndSellStock btbss1 = new BestTimeToBuyAndSellStock(new int[] {7,1,5,3,6,4});
+        BestTimeToBuyAndSellStock btbss2 = new BestTimeToBuyAndSellStock(new int[] {7,6,4,3,1});
+
+        System.out.println(btbss1.solve());
+        System.out.println(btbss2.solve());
     }
 }
